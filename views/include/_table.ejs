@@ -1,0 +1,17 @@
+<% for(var i=0; i < memories.length; i++){ %>
+<tr>
+    <td><%= memories[i].memory %></td>
+    <td><%= memories[i].language %></td>
+    <td><%= memories[i].date %></td>
+    <td><%= memories[i].who %></td>
+    <td>
+        <a href="/update-memory?id=<%=  memories[i]._id%>" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        
+        <a class="btn border-shadow delete" data_id=<%=  memories[i]._id%>>
+            <span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+    </td>
+</tr>
+<% } %>

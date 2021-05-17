@@ -1,0 +1,27 @@
+<!--form-->
+<form action='/api/memories' method="POST" id="add_memory">
+    <div class="new_memory">
+        <div class="form-group">
+            <label for="memory" class="text-light">Memory</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="memory" value="Memory">
+        </div>
+        <div class="form-group">
+            <label for="language" class="text-light">Language</label>
+            <input type="text" name="language" value="Language">
+        </div>
+        <div class="form-group">
+            <label for="date" class="text-light">Date</label>
+            <input type="text" name="date" value="Date">
+        </div>
+        <div class="form-group">
+            <label for="who" class="text-light">Who are you</label>
+            <input type="text" name="who" value="Your name">
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+    </div>
+</form>
+<!--/form-->

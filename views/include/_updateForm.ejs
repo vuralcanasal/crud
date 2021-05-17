@@ -1,0 +1,27 @@
+<!--form-->
+<form method="POST" id="update_memory">
+    <div class="new_memory">
+        <div class="form-group">
+            <label for="memory" class="text-light">Memory</label>
+            <input type="hidden" name="id" value="<%= memory._id %>">
+            <input type="text" name="memory" value="<%= memory.memory %>">
+        </div>
+        <div class="form-group">
+            <label for="language" class="text-light">Language</label>
+            <input type="text" name="language" value="<%= memory.language %>">
+        </div>
+        <div class="form-group">
+            <label for="date" class="text-light">Date</label>
+            <input type="text" name="date" value="<%= memory.date %>">
+        </div>
+        <div class="form-group">
+            <label for="who" class="text-light">Who are you</label>
+            <input type="text" name="who" value="<%= memory.who %>">
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+    </div>
+</form>
+<!--/form-->
